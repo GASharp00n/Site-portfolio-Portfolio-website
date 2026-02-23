@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Portfolio - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#020617] to-black text-gray-100"
+  >
+    <!-- Header -->
+    <header class="py-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Sacha Juillard</h1>
+      <p class="mt-4 text-gray-400">
+        Développeur en devenir • Élève à l'école 89 • Amateur de technologie
+      </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/40 border-b border-white/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex items-center justify-center md:justify-between p-4"
+      >
+        <span class="text-lg font-semibold md:hidden">Menu</span>
+
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a href="index.html" class="hover:text-blue-400 transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="apropos.html" class="hover:text-blue-400 transition"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="Projet.html" class="hover:text-blue-400 transition"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="Contact.html" class="hover:text-blue-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="max-w-screen-xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-14">Projets</h2>
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-white/10"
+        >
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1200/1*IGda1f7np5KIup0lMHBjWg.jpeg"
+            alt="Portfolio Website"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Site portfolio</h3>
+            <p class="text-gray-300">
+              Ce site Portfolio est également un projet réalisé en HTML
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-white/10"
+        >
+          <img
+            src="https://learncgames.com/wp-content/uploads/2020/10/backtracking-maze.jpg"
+            alt="Projet Maze"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Projet Maze</h3>
+            <p class="text-gray-300">
+              Projet en C visant à traverser un labyrinthe en retirant les
+              points des coordonnées deja parcourues
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-white/10"
+        >
+          <img
+            src="tr-command-imagecompressor.png"
+            alt="Projet TR"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Projet TR</h3>
+            <p class="text-gray-300">
+              Reproduction de la commande TR (traduction) en C avec ses options
+              -d (suppression), -cd (conservation) et -h (helper)
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      © 2026 — Sacha Juillard ·
+      <a href="https://github.com/GASharp00n" class="hover:underline">GitHub</a>
+    </footer>
+  </body>
+</html>

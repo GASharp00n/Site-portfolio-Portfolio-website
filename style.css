@@ -1,0 +1,46 @@
+/*
+body {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:
+    linear-gradient(
+      180deg,
+      #ffb600 0%,
+      #ffaa00 10%,
+      #ff9e00 20%,
+      #ff9100 30%,
+      #ff8500 40%,
+      #ff7900 50%,
+      #ff6d00 60%,
+      #ff6000 70%,
+      #ff5400 80%,
+      #ff4800 90%
+    ),
+    linear-gradient(
+      0deg,
+      #ffb600 0%,
+      #ffaa00 10%,
+      #ff9e00 20%,
+      #ff9100 30%,
+      #ff8500 40%,
+      #ff7900 50%,
+      #ff6d00 60%,
+      #ff6000 70%,
+      #ff5400 80%,
+      #ff4800 90%
+    );
+  background-repeat: no-repeat;
+  background-size:
+    100% 100%,
+    100% 90%;
+  background-position:
+    top,
+    0px 750px;
+}
+*/
+.bg-colorbar {
+  background-color: #f17528;
+}
+.bg-colormain {
+  background-color: #fff1e6;
+}

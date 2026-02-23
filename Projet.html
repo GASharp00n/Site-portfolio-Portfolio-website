@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projets - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <!-- Header -->
+    <header class="py-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Sacha Juillard</h1>
+      <p class="mt-4 text-gray-400">
+        Développeur junior en formation • Élève à l'école 89
+      </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/50 border-b border-orange-500/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex justify-center md:justify-between p-4"
+      >
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a href="index.html" class="hover:text-orange-400 transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="apropos.html" class="hover:text-orange-400 transition"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a
+              href="projets.html"
+              class="text-orange-400 border-b border-orange-400"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-orange-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="max-w-screen-xl mx-auto px-6 py-20">
+      <h2 class="text-3xl text-orange-400 font-bold text-center mb-12">
+        Mes Projets
+      </h2>
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Portfolio Website -->
+        <a href="projects/portfolio-website.html" class="group block">
+          <div
+            class="bg-slate-800/80 rounded-xl overflow-hidden border border-white/10 shadow-lg hover:shadow-orange-500/20 hover:-translate-y-2 transition-all duration-300"
+          >
+            <img
+              src="Pokédex.png"
+              alt="Portfolio Website"
+              class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-orange-400 mb-2">
+                Site pokédex
+              </h3>
+              <p class="text-gray-300">
+                Création d’un site pokédex en html et css utilisant une API
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Maze -->
+        <a href="projects/maze.html" class="group block">
+          <div
+            class="bg-slate-800/80 rounded-xl overflow-hidden border border-white/10 shadow-lg hover:shadow-orange-500/20 hover:-translate-y-2 transition-all duration-300"
+          >
+            <img
+              src="MAZE.png"
+              alt="Projet Maze"
+              class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-orange-400 mb-2">
+                Projet Maze
+              </h3>
+              <p class="text-gray-300">
+                Résolution d’un labyrinthe avec algorithmes en C.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- TR -->
+        <a href="projects/tr.html" class="group block">
+          <div
+            class="bg-slate-800/80 rounded-xl overflow-hidden border border-white/10 shadow-lg hover:shadow-orange-500/20 hover:-translate-y-2 transition-all duration-300"
+          >
+            <img
+              src="TR.png"
+              alt="Projet TR"
+              class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-orange-400 mb-2">
+                Projet TR
+              </h3>
+              <p class="text-gray-300">
+                Reproduction de la commande Unix TR en C.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      © 2026 — Sacha Juillard •
+      <a
+        href="https://github.com/GASharp00n"
+        target="_blank"
+        class="hover:underline"
+      >
+        GitHub
+      </a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <!-- Header / Name -->
+    <header class="py-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Sacha Juillard</h1>
+      <p class="mt-4 text-gray-400">
+        Développeur en devenir • Élève à l'école 89 • Amateur de technologie
+      </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/40 border-b border-orange-500/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-center md:justify-between p-4"
+      >
+        <span class="text-lg font-semibold md:hidden">Menu</span>
+
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a href="index.html" class="hover:text-orange-400 transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="apropos.html" class="hover:text-orange-400 transition"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="Projet.html" class="hover:text-orange-400 transition"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="hover:text-orange-400 transition"
+              aria-current="page"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-screen-xl mx-auto px-6 py-20 space-y-10">
+      <!-- Contact Card -->
+      <div
+        class="bg-slate-800/80 rounded-xl shadow-lg transition overflow-hidden border border-white/10 p-8 max-w-xl mx-auto"
+      >
+        <h2 class="text-3xl font-bold text-orange-400 mb-6 text-center">
+          Contactez-moi
+        </h2>
+        <p class="text-gray-300 mb-6 text-center">
+          Remplissez le formulaire ci-dessous pour me laisser un message.
+        </p>
+
+        <form class="space-y-4">
+          <div>
+            <label class="block text-gray-300 mb-1" for="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              class="w-full px-4 py-2 rounded-lg bg-gray-900 text-gray-100 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-300 mb-1" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre email"
+              class="w-full px-4 py-2 rounded-lg bg-gray-900 text-gray-100 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-300 mb-1" for="message"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Votre message"
+              class="w-full px-4 py-2 rounded-lg bg-gray-900 text-gray-100 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <button
+              type="submit"
+              class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-500 transition"
+            >
+              Envoyer
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      © 2026 — Sacha Juillard
+      <a href="https://github.com/GASharp00n" class="hover:underline">GitHub</a>
+    </footer>
+  </body>
+</html>

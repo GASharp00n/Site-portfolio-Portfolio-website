@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portfolio - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <!-- Header / Name -->
+    <header class="py-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Sacha Juillard</h1>
+      <p class="mt-4 text-gray-400">
+        Développeur en devenir • Élève à l'école 89 • Amateur de technologie
+      </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/40 border-b border-orange-500/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-center md:justify-between p-4"
+      >
+        <span class="text-lg font-semibold md:hidden">Menu</span>
+
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="hover:text-orange-400 transition"
+              aria-current="page"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="apropos.html" class="hover:text-orange-400 transition"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="Projet.html" class="hover:text-orange-400 transition"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="Contact.html" class="hover:text-orange-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-screen-xl mx-auto px-6 py-20 space-y-10">
+      <h2 class="text-3xl text-orange-400 font-bold text-center mb-12">
+        Bienvenue sur mon portfolio
+      </h2>
+
+      <p class="text-gray-300 text-center max-w-3xl mx-auto mb-10">
+        Ce site répertorie des projets que j'ai realisé dans le cadre de mon
+        apprentissage a l'école 89 ainsi que de montrer mes compétences que l'on
+        m'a enseigné
+      </p>
+
+      <!-- Skills / Projects Cards -->
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1: Base de données -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition p-6 border border-white/10"
+        >
+          <h3 class="text-xl text-orange-400 font-semibold mb-2">
+            Base de données
+          </h3>
+          <p class="text-gray-300 mb-2">
+            Découverte et manipulation des bases SQL avec création, insertions
+            et requêtes de sélection.
+          </p>
+          <p class="text-gray-400">
+            Projet : Création d'un prototype d'application pour un établissement
+            scolaire.
+          </p>
+        </div>
+
+        <!-- Card 2: Réseaux -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition p-6 border border-white/10"
+        >
+          <h3 class="text-xl text-orange-400 font-semibold mb-2">Réseaux</h3>
+          <p class="text-gray-300 mb-2">
+            Notions d’adressage IP, sous-réseaux et adresses de broadcast.
+          </p>
+          <p class="text-gray-400">
+            Projet : Configuration de switchs, routeurs et machines sur un
+            réseau d’entreprise avec plusieurs sous-réseaux.
+          </p>
+        </div>
+
+        <!-- Card 3: Shell & C -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition p-6 border border-white/10"
+        >
+          <h3 class="text-xl text-orange-400 font-semibold mb-2">Shell & C</h3>
+          <p class="text-gray-300 mb-2">
+            Bases de la programmation : conditions, boucles, chaînes de
+            caractères, read/write, headers et structures.
+          </p>
+          <p class="text-gray-400">
+            Projet : Recode partiel de TR pour remplacement, suppression et
+            conservation de caractères.
+          </p>
+        </div>
+
+        <!-- Card 4: Web -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition p-6 border border-white/10"
+        >
+          <h3 class="text-xl text-orange-400 font-semibold mb-2">Web</h3>
+          <p class="text-gray-300 mb-2">
+            Langages web : HTML, CSS, JavaScript, utilisation d’API et
+            Bootstrap.
+          </p>
+          <p class="text-gray-400">
+            Projet Pokédex : Recherche, gestion d’équipe, tri par génération et
+            types avec API Pokémon.
+          </p>
+        </div>
+
+        <!-- Card 5: IA -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg hover:shadow-2xl transition p-6 border border-white/10"
+        >
+          <h3 class="text-xl text-orange-400 font-semibold mb-2">
+            Intelligence Artificielle
+          </h3>
+          <p class="text-gray-300 mb-2">
+            Probabilités et algorithmes pour déterminer le résultat le plus
+            probable selon la requête de l’utilisateur.
+          </p>
+          <p class="text-gray-400">
+            Projet River Crossing : Utilisation de Python et breadth-first
+            search pour résoudre un problème mathématique.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      © 2026 — Sacha Juillard •
+      <a href="https://github.com/GASharp00n" class="hover:underline">GitHub</a>
+      •
+    </footer>
+  </body>
+</html>

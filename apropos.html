@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>À propos - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <!-- Header -->
+    <header class="py-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Sacha Juillard</h1>
+      <p class="mt-4 text-gray-400">
+        Développeur en devenir • Élève à l'école 89 • Amateur de technologie
+      </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/40 border-b border-orange-500/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-center md:justify-between p-4"
+      >
+        <span class="text-lg font-semibold md:hidden">Menu</span>
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a href="index.html" class="hover:text-orange-400 transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a
+              href="apropos.html"
+              class="hover:text-orange-400 transition"
+              aria-current="page"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="Projet.html" class="hover:text-orange-400 transition"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="Contact.html" class="hover:text-orange-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="max-w-screen-xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-14">À propos de moi</h2>
+
+      <div class="grid gap-10 sm:grid-cols-1 lg:grid-cols-2">
+        <!-- Card 1: Background & Skills -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg transition overflow-hidden border border-white/10 p-6"
+        >
+          <h3 class="text-xl font-semibold text-orange-400 mb-4">
+            Mon parcours
+          </h3>
+          <p class="text-gray-300 mb-4">
+            Étudiant passionné par la technologie, des consoles aux ordinateurs,
+            cette curiosité m’a suivi depuis mon enfance et m’a amené à
+            m’intéresser à la programmation.
+          </p>
+          <p class="text-gray-300">
+            Dans le cadre de ma formation a l'école 89 j'ai appris a me servir
+            du HTML et CSS et un début de Javascript mais aussi du langage C
+            avec neovim
+          </p>
+        </div>
+
+        <!-- Card 2: CV & Interests -->
+        <div
+          class="bg-slate-800/80 rounded-xl shadow-lg transition overflow-hidden border border-/10 p-6"
+        >
+          <h3 class="text-xl font-semibold text-orange-400 mb-4">
+            CV & Centres d’intérêt
+          </h3>
+          <a
+            href="CV-sacha-JUILLARD-_2_.pdf"
+            target="_blank"
+            rel="noopener"
+            class="inline-block px-6 py-3 bg-brand text-white font-semibold rounded-base hover:opacity-90 transition"
+          >
+            Voir mon CV (PDF)
+          </a>
+
+          <p class="text-gray-300 mt-6">
+            En dehors des technologies, je m’intéresse notamment à la natation
+            et à la randonnée.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      © 2026 — Sacha Juillard
+      <a href="https://github.com/GASharp00n" class="hover:underline">GitHub</a>
+    </footer>
+  </body>
+</html>

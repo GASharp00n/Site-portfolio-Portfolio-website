@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projet Maze - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <header class="py-12 text-center">
+      <h1 class="text-4xl font-bold">Projet Maze</h1>
+      <p class="text-gray-400 mt-2">Résolution de labyrinthe en C</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+      <img
+        src="../MAZE.png"
+        alt="Screenshot Projet Maze"
+        class="rounded-xl shadow-lg w-full object-cover"
+      />
+
+      <section>
+        <h2 class="text-2xl font-semibold text-orange-400 mb-4">Description</h2>
+        <p class="text-gray-300">
+          Projet consistant à traverser un labyrinthe en trouvant un chemin
+          valide entre un point de départ et une sortie. Le programme évite les
+          cases déjà visitées pour empêcher les boucles infinies.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-orange-400 mb-4">
+          Technologies
+        </h2>
+        <ul class="list-disc list-inside text-gray-300 space-y-1">
+          <li>Langage C</li>
+          <li>Structures</li>
+          <li>Algorithme de backtracking</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-orange-400 mb-4">
+          Problèmes rencontrés
+        </h2>
+        <p class="text-gray-300">
+          Gestion des boucles infinies et mémorisation des cases visitées.
+          Solution : implémentation d’un marquage dynamique des positions.
+        </p>
+      </section>
+
+      <div class="text-center">
+        <a
+          href="../Projet.html"
+          class="px-6 py-3 bg-orange-600 rounded-lg hover:bg-orange-500 transition"
+        >
+          ← Retour aux projets
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
