@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact - Sacha Juillard</title>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <header class="py-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Contact</h1>
+      <p class="mt-4 text-gray-400">
+        Vous pouvez m’envoyer un message via ce formulaire
+      </p>
+    </header>
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/50 border-b border-orange-500/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex justify-center md:justify-between p-4"
+      >
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a href="index.html" class="hover:text-orange-400">Accueil</a>
+          </li>
+          <li>
+            <a href="apropos.html" class="hover:text-orange-400">À propos</a>
+          </li>
+          <li>
+            <a href="projets.html" class="hover:text-orange-400">Projets</a>
+          </li>
+          <li>
+            <a
+              href="WIPcontact.html"
+              class="text-orange-400 border-b border-orange-400"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="max-w-screen-md mx-auto px-6 py-20">
+      <form
+        id="contactForm"
+        class="bg-slate-800/80 p-8 rounded-xl shadow-lg space-y-6 border border-white/10"
+      >
+        <div>
+          <label class="block mb-2 font-semibold text-gray-200">Nom</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full px-4 py-2 rounded bg-slate-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold text-gray-200">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 rounded bg-slate-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold text-gray-200">Message</label>
+          <textarea
+            name="message"
+            rows="6"
+            required
+            class="w-full px-4 py-2 rounded bg-slate-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full py-3 bg-orange-600 hover:bg-orange-500 rounded text-gray-100 font-semibold transition"
+        >
+          Envoyer
+        </button>
+      </form>
+      <p
+        id="formMessage"
+        class="hidden mt-4 text-center text-green-400 font-semibold"
+      ></p>
+    </main>
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      2026 — Sacha Juillard
+      <a
+        href="https://github.com/GASharp00n"
+        target="_blank"
+        class="hover:underline"
+        >GitHub</a
+      >
+    </footer>
+    <script>
+      const form = document.getElementById("contactForm");
+      const messageEl = document.getElementById("formMessage");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = form.name.value;
+        const email = form.email.value;
+        const message = form.message.value;
+        const subject = encodeURIComponent(`Message de ${name}`);
+        const body = encodeURIComponent(
+          `Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+        );
+
+        window.location.href = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+        messageEl.textContent =
+          "Votre message a été préparé dans votre client mail.";
+        messageEl.classList.remove("hidden");
+        form.reset();
+      });
+    </script>
+  </body>
+</html>

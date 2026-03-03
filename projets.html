@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projets - Sacha Juillard</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <header class="py-14 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Mes Projets</h1>
+    </header>
+    <nav
+      class="sticky top-0 backdrop-blur-md bg-black/60 border-b border-orange-500/10"
+    >
+      <div class="max-w-screen-xl mx-auto px-4">
+        <ul
+          class="flex flex-col sm:flex-row justify-center md:justify-between items-center gap-4 py-4"
+        >
+          <li>
+            <a href="index.html" class="hover:text-orange-400">Accueil</a>
+          </li>
+          <li>
+            <a href="apropos.html" class="hover:text-orange-400">À propos</a>
+          </li>
+          <li><a href="projets.html" class="text-orange-400">Projets</a></li>
+          <li>
+            <a href="WIPcontact.html" class="hover:text-orange-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main
+      class="max-w-screen-xl mx-auto px-4 py-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+    >
+      <a
+        href="projects/tr.html"
+        class="bg-slate-800/80 p-6 rounded-xl border border-white/10 hover:-translate-y-2 transition block"
+      >
+        <h3 class="text-xl text-orange-400 font-semibold mb-2">Projet TR</h3>
+        <p class="text-gray-300">Reproduction de la commande Unix TR en C.</p>
+      </a>
+      <a
+        href="projects/pokédex.html"
+        class="bg-slate-800/80 p-6 rounded-xl border border-white/10 hover:-translate-y-2 transition block"
+      >
+        <h3 class="text-xl text-orange-400 font-semibold mb-2">
+          Projet Pokédex
+        </h3>
+        <p class="text-gray-300">Site utilisant l’API Pokémon.</p>
+      </a>
+      <a
+        href="projects/maze.html"
+        class="bg-slate-800/80 p-6 rounded-xl border border-white/10 hover:-translate-y-2 transition block"
+      >
+        <h3 class="text-xl text-orange-400 font-semibold mb-2">Projet Maze</h3>
+        <p class="text-gray-300">
+          Résolution d’un labyrinthe avec algorithmes en C.
+        </p>
+      </a>
+    </main>
+    <footer
+      class="text-center py-8 text-gray-500 border-t border-white/10 text-sm"
+    >
+      2026 — Sacha Juillard
+    </footer>
+  </body>
+</html>
