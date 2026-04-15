@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projet Maze - Sacha Juillard</title>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#ff8c42] via-[#1a0f08] to-black text-gray-100"
+  >
+    <header class="py-16 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold">Projet Printf</h1>
+      <p class="mt-4 text-gray-400">Recode de la fonction printf</p>
+    </header>
+    <nav
+      class="sticky top-0 z-20 backdrop-blur-md bg-black/40 border-b border-orange-500/10"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex justify-center md:justify-between p-4"
+      >
+        <ul
+          class="flex flex-col md:flex-row gap-6 md:gap-10 font-medium text-gray-200"
+        >
+          <li>
+            <a href="../index.html" class="hover:text-orange-400 transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="../apropos.html" class="hover:text-orange-400 transition"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="../projets.html" class="hover:text-orange-400 transition"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a
+              href="../WIPcontact.html"
+              class="hover:text-orange-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="max-w-screen-xl mx-auto px-6 py-20 space-y-12">
+      <img
+        src="Printf.png"
+        alt="Screenshot Projet Maze"
+        class="rounded-xl shadow-lg w-full object-cover"
+      />
+
+      <section>
+        <h2 class="text-2xl font-semibold text-orange-400 mb-4">Description</h2>
+        <p class="text-gray-300">
+          Projet en C ayant pour but de recoder la fonction printf reproduisant
+          le comportement de la fonction bibliothèque dprintf et renvoie les
+          caractères qu'elle réussi a écrire
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-orange-400 mb-4">
+          Fonctionnalités
+        </h2>
+        <ul class="list-disc list-inside text-gray-300 space-y-1">
+          <li>Option c: imprime des caractères individuels</li>
+          <li>Option s: imprime des chaînes de caractères</li>
+          <li>Option d: imprime les entiers en base 10</li>
+          <li>Option p: imprime les pointeurs en base 16</li>
+          <li>Option x: imprime les entiers en base 16</li>
+          <li>Option b: imprime les entiers en binaires</li>
+          <li>Option o: imprime les entiers en base 8</li>
+          <li>Option %: imprime le symbole %</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-orange-400 mb-4">
+          Compétences développées
+        </h2>
+        <p class="text-gray-300">
+          Gestion des fonctions variadiques, manipulation des pointeurs et des
+          descripteurs de fichiers, conversions de bases numériques,
+          architecture modulaire avec pointeurs de fonctions,
+        </p>
+      </section>
+
+      <div class="text-center">
+        <a
+          href="../projets.html"
+          class="px-6 py-3 bg-orange-600 rounded-lg hover:bg-orange-500 transition"
+        >
+          ← Retour aux projets
+        </a>
+      </div>
+    </main>
+    <footer class="text-center py-10 text-gray-500 border-t border-white/10">
+      2026 — Sacha Juillard
+      <a href="https://github.com/GASharp00n" class="hover:underline">GitHub</a>
+    </footer>
+  </body>
+</html>
