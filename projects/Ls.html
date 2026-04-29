@@ -49,7 +49,7 @@
     </nav>
     <main class="max-w-screen-xl mx-auto px-6 py-20 space-y-12">
       <img
-        src="Printf.png"
+        src="Ls.png"
         alt="Screenshot Projet Ls"
         class="rounded-xl shadow-lg w-full object-cover"
       />
@@ -57,9 +57,9 @@
       <section>
         <h2 class="text-2xl font-semibold text-orange-400 mb-4">Description</h2>
         <p class="text-gray-300">
-          Projet en C ayant pour but de recoder la fonction printf reproduisant
-          le comportement de la fonction bibliothèque dprintf et renvoie les
-          caractères qu'elle réussi a écrire
+          Projet en C ayant pour but de recoder partiellement la fonction ls
+          permettant de voir les fichiers et dossiers dans un dossier, la
+          fonction peut etre utilisée avec 3 options
         </p>
       </section>
 
@@ -68,14 +68,13 @@
           Fonctionnalités
         </h2>
         <ul class="list-disc list-inside text-gray-300 space-y-1">
-          <li>Option c: imprime des caractères individuels</li>
-          <li>Option s: imprime des chaînes de caractères</li>
-          <li>Option d: imprime les entiers en base 10</li>
-          <li>Option p: imprime les pointeurs en base 16</li>
-          <li>Option x: imprime les entiers en base 16</li>
-          <li>Option b: imprime les entiers en binaires</li>
-          <li>Option o: imprime les entiers en base 8</li>
-          <li>Option %: imprime le symbole %</li>
+          <li>-a: affiche les fichiers cachés</li>
+          <li>
+            -l: affiche les détails des fichiers et dossiers (permissions)
+          </li>
+          <li>
+            -h: affiche la taille du fichier et dossiers de façon plus lisible
+          </li>
         </ul>
       </section>
 
@@ -84,9 +83,8 @@
           Compétences développées
         </h2>
         <p class="text-gray-300">
-          Gestion des fonctions variadiques, manipulation des pointeurs et des
-          descripteurs de fichiers, conversions de bases numériques,
-          architecture modulaire avec pointeurs de fonctions,
+          Utilisation de malloc, ouverte et lecture de dossiers, structures,
+          gestions d'erreurs, lecture de permissions
         </p>
       </section>
 
